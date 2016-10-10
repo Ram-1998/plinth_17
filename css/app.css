@@ -1,0 +1,85 @@
+@font-face {
+ font-family: caviar;
+ src: url("../font/CaviarDreams.ttf");
+}
+@font-face {
+ font-family: rez;
+ src: url("../font/REZ.ttf");
+}
+.container{
+	background-color: #25313E;
+}
+.navBar{
+	background-color: white;
+	margin: 40px;
+}
+.Plinth{
+	text-align: center;
+	color: white;
+	padding-bottom: 35px;		
+}
+h1{
+	display: inline-block;
+	font-family: rez;
+}
+.year{
+	font-size: 25px;
+	font-family: 'Catamaran', sans-serif;
+}
+.terminal{
+	width:70% !important;
+}
+.menuBar {
+  /*width: 800px;*/
+  height: 35px;
+  box-sizing: border-box;
+  background-color: #E0E8F0;
+  margin: 0 auto;
+  padding-left: 10px;
+  padding-top: 5px;
+  border-top-right-radius: 5px;
+  border-top-left-radius: 5px;
+}
+.icons{
+	display: inline-block;
+}
+.close{
+	width: 10px;
+  height: 10px;
+	background: #E96E4C;
+	border-radius: 100px;
+	margin-right: 3px;	
+	display: inline-block;
+}
+.minimize{
+	width: 10px;
+  height: 10px;
+	background: #E6A935;
+	border-radius: 100px;
+	margin-right: 3px;	
+	display: inline-block;
+}
+.maximize{
+	width: 10px;
+  height: 10px;
+	background: #85C33D;
+	border-radius: 100px;
+	display: inline-block;
+}
+.title{
+	display: inline-block;
+	text-align: center;
+	font-family: "caviar";
+}
+.content{
+	color: white;
+	/*width: 800px;*/
+  height: 450px;
+  font-family: "caviar";
+	box-sizing: border-box;
+	background-color: #30353A;
+  margin: 0 auto;
+  padding: 20px;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
