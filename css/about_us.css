@@ -1,0 +1,107 @@
+@font-face {
+ font-family: caviar;
+ src: url("../font/CaviarDreams.ttf");
+}
+@font-face {
+ font-family: rez;
+ src: url("../font/REZ.ttf");
+}
+.container{
+	background-color: #FFFFFF;
+}
+.navBar{
+	background-color: #f1f1f1;
+	height: 64px;
+	text-align: right;
+	font-family: 'Rubik', sans-serif;
+	box-shadow: 0px 2px 4px 0 rgba(0,0,0,.5);
+}
+.links{
+	display: inline-block;
+	padding: 15px;
+	padding-left: 20px;
+	padding-right: 20px;
+}
+.links:hover{
+	border-bottom-color: blue;
+	border-bottom-style: solid;
+	border-width: 5px;
+}
+.menulinks{
+	color: black;
+}
+.aboutUs{
+	text-align: center;
+	color: black;
+	padding-top:60px;
+	padding-bottom: 25px;		
+}
+h1{
+	font-family: 'Source Sans Pro', sans-serif;
+}
+.register{
+	padding:0px;
+	padding-right: 10px;
+}
+.socialRegister{
+	padding:0px;
+	margin-left: 0px;
+	margin-right:20px;
+	margin-bottom: 5px;
+	height: 100%;	
+	box-shadow: 1 1 1 0 rgba(0,0,0,.5);
+}
+.link{
+	display: inline-block;
+	text-align: center;
+	font-size: 20px;
+	margin: auto;
+	padding:0px;
+	padding-top: 10px;
+	min-height: 50px;
+	max-height: 50px;
+}
+.logo{
+	display: inline-block;
+	min-height: 50px;
+	min-width: 50px;
+	max-height: 50px;
+	max-width:50px;
+	padding:0px;
+}
+.text{
+	font-family: 'Rubik', sans-serif;
+	padding: 30px;
+	padding-top: 0px;
+}
+.social{
+	padding:0px;
+	padding-left: 10px;
+}
+.socialFollow{
+	padding:0px;
+	margin-left: 20px;
+	margin-right: 0px;
+	margin-bottom: 5px;
+	height: 100%;	
+	border-bottom-style: outset;
+}
+.images{
+	display: inline-block;
+	margin:50px;
+	margin-bottom: 0px;
+	padding-bottom: 0px;
+}
+.media{
+	/*display: inline-block;
+	height: 175px;*/
+	float: left;
+	vertical-align: bottom;	
+
+}
+.footer{
+	background-color: #7D7D7D;
+	margin-top: 0px;
+	padding: 70px;
+	
+}
