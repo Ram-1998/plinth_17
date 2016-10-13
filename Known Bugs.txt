@@ -1,0 +1,10 @@
+In about,contact, sponsor:
+1) like and follow links mess up in mobile/tablet view.
+2) Footer not centered in small(mobile) view.
+3) Main body content doesn't use row class, hence footer positioning problem in mobile view.
+
+In all 4:
+1) Navbar Menu link's bottom border on hovering should be above current position.
+2) Register and like should minimize to side when scrolling down.
+
+Main content of sponspor page missing. :P
