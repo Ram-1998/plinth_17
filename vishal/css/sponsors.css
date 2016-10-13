@@ -1,0 +1,45 @@
+.heading{
+	text-align: center;
+	color: black;
+	padding-top: 70px;
+	padding-bottom: 30px;		
+}
+h1{
+	font-size:40px;	
+}
+.sponsors{
+	display: inline-block;
+	position: relative;
+	top: 12px;
+}
+.year{
+	font-size: 25px;
+}
+.content{
+	margin-bottom: 400px;
+	padding-bottom: 200px;
+}
+.text{
+	padding: 30px;
+	padding-top: 0px;
+}
+footer{
+	padding-top: 30px;
+	background-color: #589FD6;
+	color: white;
+	padding-bottom: 10px;
+}
+.footerlinks{
+	font-size: 16px;
+	padding-bottom: 10px;
+}
+.footerlinks p{
+	font-weight: bold;
+}
+.Copyright{
+	font-size: 15px;
+	padding-left:40px;
+	padding-top:10px;
+	border-top-style: solid;
+	border-top-width: 1px; 
+}

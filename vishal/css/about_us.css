@@ -1,0 +1,48 @@
+.aboutUs{
+	text-align: center;
+	color: black;
+	padding-top: 70px;
+	padding-bottom: 30px;	
+}
+h1{
+	font-size:40px;
+}
+.content{
+	margin-bottom: 400px;
+	padding-bottom: 200px;
+}
+.text{
+	padding: 50px;
+	padding-top: 0px;
+}
+.images{
+	margin-bottom: 0px;
+	padding-bottom: 0px;
+}
+.greyimages{
+	position: relative;
+}
+.greyimages img{
+	position: absolute;
+	bottom: 0;
+}
+footer{
+	padding-top: 30px;
+	background-color: #7D7D7D;
+	color: white;
+	padding-bottom: 10px;
+}
+.footerlinks{
+	font-size: 16px;
+	padding-bottom: 10px;
+}
+.footerlinks p{
+	font-weight: bold;
+}
+.Copyright{
+	font-size: 15px;
+	padding-left:40px;
+	padding-top:10px;
+	border-top-style: solid;
+	border-top-width: 1px; 
+}
