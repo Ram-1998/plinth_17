@@ -1,0 +1,150 @@
+<!DOCTYPE HTML>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Plinth'17 | Terminal</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="../js/jquery-1.7.1.min.js"></script>
+    <script src="../js/jquery.terminal.min.js"></script>
+    <script src="../js/form.js"></script>
+    <link href="../css/jquery.terminal.css" rel="stylesheet"/>
+  </head>
+<body>
+
+<script>
+jQuery(document).ready(function($) {
+    
+    $('body').terminal(function(command, term) {
+       if (command == 'plinth'){
+            term.echo('[[b;;;paddingParent]Commands: ]');
+            term.echo("[[b;blue;black;paddingChild]    about]          [[b;cyan;black]# About Plinth'17]");
+            term.echo('[[b;blue;black;paddingChild]    faq]            [[b;cyan;black]# Frequently Asked Questions]');
+            term.echo("[[b;blue;black;paddingChild]    location]       [[b;cyan;black]# Google maps link to Plinth'17 venue]");
+            term.echo('[[b;blue;black;paddingChild]    contact]        [[b;cyan;black]# Contact details of Organizers]');
+            term.echo('[[b;blue;black;paddingChild]    register]        [[b;cyan;black]# Register For Events]');
+            term.push(function(command, term) {
+                if (command == 'about') {
+                    term.echo('[[b;orange;black;paddingParent]========== About Plinth17 ==========]');
+                    term.echo('[[b;;;desc]PLINTH is the annual inter-collegiate Techno-Management-Literary Festival of The LNMIIT, Jaipur. It encompasses and transcends the boundaries of science and technology, bringing to its audience a truly enriching experience.]');
+                } else if(command == 'man about') {
+                    focus(true);
+                } else if (command == 'faq') {
+                    term.echo('[[b;orange;black;paddingParent]========== Frequently Asked Questions ==========]');
+                    term.echo('[[b;yellow;black;paddingChild]> What are the registration charges?]');
+                    term.echo('  The registration charges and other necessary details regarding the payment are available under the tab "Register" of all specific events at http://plinth.lnmiit.ac.in .');
+                    term.echo('');
+                    term.echo('[[b;yellow;black;paddingChild]> How can we reach to the event?]');
+                    term.echo('  PLINTH takes place in The LNM Institute of Information Technology (LNMIIT) campus in Jaipur (state of Rajasthan).');
+                    term.echo('  By Air');
+                    term.echo('  The LNM Institute of Information Technology campus is at a distance of approximately 23.3km from the airport. LNMIIT has its own transportation facilities to ply to and fro from LNMIIT campus to Jaipur city which starts from Ajmeri Gate, Raja Park, Pink Square mall, Jaipur city. Ajmeri Gate is approximately 3.3km from Jaipur Railway station. Prepaid cabs are available from the airport to the campus.');
+                    term.echo('  By Rail');
+                    term.echo('  The LNM Institute of Information Technology campus is at a distance of a approximately 17.4km from the Jaipur railway station. LNMIIT has its own transportation facilities to ply to and fro from LNMIIT campus to Jaipur city which starts from Ajmeri Gate, Raja Park, Pink Square mall, Jaipur city. Ajmeri Gate is approximately 3.3km from Jaipur Railway station. Prepaid cabs are available from the Railway station to the campus.');
+                    term.echo('');
+                    term.echo('[[b;yellow;black;paddingChild]> Can I register, but not take accommodation?]')
+                    term.echo('  The registration amount remains unchanged in both the cases. It is advisable to avail the accommodation facility since there is no other mode of accommodation available in the campus during the fest.');
+                    term.echo('');
+                    term.echo('[[b;yellow;black;paddingChild]> I want to attend fun/informal events only. Will I have to pay the whole registration fee?]');
+                    term.echo("  No, you have to pay only for the events. Only if any fun/informal events have charges then you have to pay for that specific event, otherwise it's free!");
+                    term.echo('');
+                    term.echo('[[b;yellow;black;paddingChild]> What is the payment procedure for registration of any events?]');
+                    term.echo('  The payment procedure will be online and offline as well. Those who have been shortlisted, will be sent an email. You will have to report at the registration desk with the payment receipt print out and the mandatory documents. Failing to bring any of the documents may lead to cancellation of your participation. The documents are:');
+                    term.echo('  College ID card.');
+                    term.echo('  Printout of the receipt of payment.');
+                    term.echo("  For Offline payment: Those participants who haven't paid the amount online also have a chance to pay offline for on spot registrations for the events but that completely depend on availability of seats.");
+                    term.echo('');
+                    term.echo('[[b;yellow;black;paddingChild]> Shall I carry my ID card with me?]');
+                    term.echo('  It is mandatory for all participants to carry college IDs. This is for your own convenience. Moreover you will be asked to produce your college id cards at the time of registrations.');
+                    term.echo('');
+                    term.echo('[[b;yellow;black;paddingChild]> Will all the team members be given accommodation at the same place?]');
+                    term.echo('  We will try but there is no surety for the same.');
+                    term.echo('');
+                    term.echo('[[b;yellow;black;paddingChild]> What are the food facilities inside the campus?]');
+                    term.echo("  There are food stalls available in the arena as long as it's open. Apart from this, there is the campus mess as well as various eateries and canteens in the campus where food is available at subsidized rates.");
+                    term.echo('');
+                    term.echo('[[b;yellow;black;paddingChild]> What about the hospital facility?]')
+                    term.echo('  There is an institute Medical Unit located near the SAC. In case you fall ill, you are advised to report to us at accommodation desk. We shall make appropriate arrangements for you to be treated at the Medical unit. We shall also be carrying a first aid kit with us, at the accommodation desk.')
+                    term.echo('');
+                    term.echo('[[b;yellow;black;paddingChild]> Are there ATMs inside the campus?]');
+                    term.echo('  There are State Bank and ICICI Bank ATMs inside the campus.');
+                    term.echo('');
+                    term.echo('[[b;yellow;black;paddingChild]> Can I enter The LNMIIT campus anytime?]');
+                    term.echo('  You can enter LNMIIT Main gate anytime by showing valid photo ID proof during 6am to 10pm, however you need to have accommodation inside the campus to stay in the campus after 10pm.');
+                    term.echo('');
+                    term.echo('[[b;yellow;black;paddingChild]> We are a group of people not participating in any of competitions or workshops and just coming to Plinth for enjoyment. Would we be provided accommodation?]');
+                    term.echo('  Accommodation would be confirmed strictly subject to availability of rooms and you can try on the spot registration during the festival.');
+                    term.echo('');
+                    term.echo('[[b;yellow;black;paddingChild]> What all deliverables do we receive after registering?]');
+                    term.echo("  After registration you'll get pass for that particular event. You will also get participation certificate if you're not in winning position.");
+                } else if(command == 'location'){
+                    term.echo('[[b;orange;black;paddingParent]========== Location ==========]');
+                    term.echo('[[b;yellow;black;paddingChild]Address: ]');
+                    term.echo(' The LNM Institute Of Information Technology, Rupa ki Nangal, Post-Sumel, Via-Jamdoli, Jaipur, Rajasthan 302031');
+                    term.echo(' Link to Google Maps : ');
+                    term.echo(' https://goo.gl/Q6ari2');
+                } else if(command == 'contact'){
+                    term.echo('[[b;orange;black;paddingParent]========== Contact ==========]');
+                    term.echo('lorum ipsum');
+                }else if(command == 'register'){
+                    term.echo('[[b;orange;black;paddingParent]========== Register ==========]');
+                    //term.echo('[[b;yellow;black;paddingChild]First Name :]')
+                    term.echo('[[b;blue;black;paddingParent]Events]');
+                    term.echo('[[b;cyan;black;paddingChild]# robotics]');
+                    term.echo('[[b;cyan;black;paddingChild]# management]');
+                    term.echo('[[b;cyan;black;paddingChild]# coding]');
+                    term.echo('[[b;cyan;black;paddingChild]# quizing]');
+                    term.echo('[[b;cyan;black;paddingChild]# astro]');
+                    term.echo('[[b;cyan;black;paddingChild]# literary]');
+                    term.push(function(command, term) {
+                        if(command == 'robotics'){
+                            term.push(function(command, term) {
+                                if(command != ''){
+                                register(command);
+                                term.push(function(command, term) {
+                                    if(command != ''){
+                                    register(command);
+                                    }
+                                }, {
+                                    prompt: 'Last Name >',
+                                    name: 'Last Name'});
+                                }
+                            }, {
+                                prompt: 'First Name >',
+                                name: 'First Name'});    
+                        }
+                    }, {
+                        prompt: 'register >',
+                        name: 'register'
+                    });
+                    
+                    /*term.echo('[[b;yellow;black;paddingChild]Last Name :]')
+                    term.push(function(command, term) {
+                        register(command);
+                    }, {
+                        prompt: 'lastName >',
+                        name: 'lastName'});*/
+                } else if(command == 'activate gui'){
+                    window.location.href = "http://plinth.lnmiit.ac.in/home.html";
+                }else {
+                    term.echo('[[b;red;black]unknown command ]' + command);
+                }
+            }, {
+                prompt: 'plinth > ',
+                name: 'plinth'});
+        } else if (command == ''){
+            term.echo(command);
+        } else if(command == 'activate gui'){
+            window.location.href = "http://plinth.lnmiit.ac.in/home.html";
+        }else {
+            term.echo('[[b;red;black]unknown command ]' + command);
+        }
+    }, {
+        greetings: "  ____    _   _           _     _       _   _   _____ \n |  _ \\  | | (_)  _ __   | |_  | |__   ( ) / | |___  |\n | |_) | | | | | | '_ \\  | __| | '_ \\  |/  | |    / / \n |  __/  | | | | | | | | | |_  | | | |     | |   / /  \n |_|     |_| |_| |_| |_|  \\__| |_| |_|     |_|  /_/   \n                                                      \n Welcome to PLINTH'17, LNMIIT's Annual Techno-Management-Literary fest. \n Type plinth in the terminal to see list of available commands.\n Not a nerd, type activate gui !", 
+        onBlur: function() {
+            // prevent loosing focus
+            return false;
+        }
+    });
+});
+
+</script>
+</body>
