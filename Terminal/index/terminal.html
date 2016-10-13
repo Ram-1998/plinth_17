@@ -17,17 +17,17 @@ jQuery(document).ready(function($) {
     $('body').terminal(function(command, term) {
        if (command == 'plinth'){
             term.echo('[[b;;;paddingParent]Commands: ]');
-            term.echo("[[b;blue;black;paddingChild]    about]          [[b;cyan;black]# About Plinth'17]");
-            term.echo('[[b;blue;black;paddingChild]    faq]            [[b;cyan;black]# Frequently Asked Questions]');
-            term.echo("[[b;blue;black;paddingChild]    location]       [[b;cyan;black]# Google maps link to Plinth'17 venue]");
-            term.echo('[[b;blue;black;paddingChild]    contact]        [[b;cyan;black]# Contact details of Organizers]');
-            term.echo('[[b;blue;black;paddingChild]    register]        [[b;cyan;black]# Register For Events]');
+            term.echo("[[b;blue;black;paddingChild]    about]");
+            term.echo('[[b;blue;black;paddingChild]    faq]');
+            term.echo("[[b;blue;black;paddingChild]    location]");
+            term.echo('[[b;blue;black;paddingChild]    contact]');
+            term.echo('[[b;blue;black;paddingChild]    register]');
             term.push(function(command, term) {
                 if (command == 'about') {
                     term.echo('[[b;orange;black;paddingParent]========== About Plinth17 ==========]');
                     term.echo('[[b;;;desc]PLINTH is the annual inter-collegiate Techno-Management-Literary Festival of The LNMIIT, Jaipur. It encompasses and transcends the boundaries of science and technology, bringing to its audience a truly enriching experience.]');
                 } else if(command == 'man about') {
-                    focus(true);
+                    term.echo("[[b;;;paddingChild]\nabout(1) \t\t\t\t\t\t\t User Commands \t\t\t\t\t\t\t about(1) \n\n\n NAME \n \t about - conveys info \n SYNOPSIS \n \t about --that's all you need \n DESCRIPTION \n \t List information about Plinth'17. \n AUTHOR \n \t Written by dudes of LNMIIT \n REPORTING BUGS \n \t Report about bugs to wedontcare.org \n COPYRIGHT \n \t Copyright © 2020 Future Developers Foundation Inc. License GUIv1.0+: \n \t This is premium software: you are not authorised to change and redistribute it. \n SEE ALSO \n \t The full documentation for about is maintained and stored in a secret location. \n\n\n GNU V 1.1 \t\t\t\t\t\t\t January 2017 \t\t\t\t\t\t\t about(1)]");
                 } else if (command == 'faq') {
                     term.echo('[[b;orange;black;paddingParent]========== Frequently Asked Questions ==========]');
                     term.echo('[[b;yellow;black;paddingChild]> What are the registration charges?]');
@@ -75,16 +75,22 @@ jQuery(document).ready(function($) {
                     term.echo('');
                     term.echo('[[b;yellow;black;paddingChild]> What all deliverables do we receive after registering?]');
                     term.echo("  After registration you'll get pass for that particular event. You will also get participation certificate if you're not in winning position.");
+                } else if(command == 'man faq') {
+                    term.echo("[[b;;;paddingChild]\nfaq(1) \t\t\t\t\t\t\t User Commands \t\t\t\t\t\t\t about(1) \n\n\n NAME \n \t faq - frequently asked questions \n SYNOPSIS \n \t faq --that's all you need \n DESCRIPTION \n \t List frequently asked questions about Plinth'17. \n AUTHOR \n \t Written by dudes of LNMIIT \n REPORTING BUGS \n \t Report about bugs to wedontcare.org \n COPYRIGHT \n \t Copyright © 2020 Future Developers Foundation Inc. License GUIv1.0+: \n \t This is premium software: you are not authorised to change and redistribute it. \n SEE ALSO \n \t The full documentation for faq is maintained and stored in a secret location. \n\n\n GNU V 1.1 \t\t\t\t\t\t\t January 2017 \t\t\t\t\t\t\t faq(1)]");
                 } else if(command == 'location'){
                     term.echo('[[b;orange;black;paddingParent]========== Location ==========]');
                     term.echo('[[b;yellow;black;paddingChild]Address: ]');
                     term.echo(' The LNM Institute Of Information Technology, Rupa ki Nangal, Post-Sumel, Via-Jamdoli, Jaipur, Rajasthan 302031');
                     term.echo(' Link to Google Maps : ');
                     term.echo(' https://goo.gl/Q6ari2');
+                } else if(command == 'man location') {
+                    term.echo("[[b;;;paddingChild]\nlocation(1) \t\t\t\t\t\t\t User Commands \t\t\t\t\t\t\t location(1) \n\n\n NAME \n \t location - how to reach LNMIIT\n SYNOPSIS \n \t location --that's all you need \n DESCRIPTION \n \t How to reach the venue for Plinth'17 along with google map's link. \n AUTHOR \n \t Written by dudes of LNMIIT \n REPORTING BUGS \n \t Report about bugs to wedontcare.org \n COPYRIGHT \n \t Copyright © 2020 Future Developers Foundation Inc. License GUIv1.0+: \n \t This is premium software: you are not authorised to change and redistribute it. \n SEE ALSO \n \t The full documentation for about is maintained and stored in a secret location. \n\n\n GNU V 1.1 \t\t\t\t\t\t\t January 2017 \t\t\t\t\t\t\t location(1)]");
                 } else if(command == 'contact'){
                     term.echo('[[b;orange;black;paddingParent]========== Contact ==========]');
                     term.echo('lorum ipsum');
-                }else if(command == 'register'){
+                } else if(command == 'man contact') {
+                    term.echo("[[b;;;paddingChild]\ncontact(1) \t\t\t\t\t\t\t User Commands \t\t\t\t\t\t\t contact(1) \n\n\n NAME \n \t contact - info about POC \n SYNOPSIS \n \t contact --that's all you need \n DESCRIPTION \n \t List information about members of Organising Comittee for Plinth'17 and how to reach them. \n AUTHOR \n \t Written by dudes of LNMIIT \n REPORTING BUGS \n \t Report about bugs to wedontcare.org \n COPYRIGHT \n \t Copyright © 2020 Future Developers Foundation Inc. License GUIv1.0+: \n \t This is premium software: you are not authorised to change and redistribute it. \n SEE ALSO \n \t The full documentation for about is maintained and stored in a secret location. \n\n\n GNU V 1.1 \t\t\t\t\t\t\t January 2017 \t\t\t\t\t\t\t about(1)]");
+                } else if(command == 'register'){
                     term.echo('[[b;orange;black;paddingParent]========== Register ==========]');
                     //term.echo('[[b;yellow;black;paddingChild]First Name :]')
                     term.echo('[[b;blue;black;paddingParent]Events]');
@@ -122,6 +128,8 @@ jQuery(document).ready(function($) {
                     }, {
                         prompt: 'lastName >',
                         name: 'lastName'});*/
+                } else if(command == 'man register') {
+                    term.echo("[[b;;;paddingChild]\nregister(1) \t\t\t\t\t\t\t User Commands \t\t\t\t\t\t\t register(1) \n\n\n NAME \n \t register - form for registration \n SYNOPSIS \n \t register --that's all you need \n DESCRIPTION \n \t Registration form for various events in Plinth'17. \n AUTHOR \n \t Written by dudes of LNMIIT \n REPORTING BUGS \n \t Report about bugs to wedontcare.org \n COPYRIGHT \n \t Copyright © 2020 Future Developers Foundation Inc. License GUIv1.0+: \n \t This is premium software: you are not authorised to change and redistribute it. \n SEE ALSO \n \t The full documentation for about is maintained and stored in a secret location. \n\n\n GNU V 1.1 \t\t\t\t\t\t\t January 2017 \t\t\t\t\t\t\t register(1)]");
                 } else if(command == 'activate gui'){
                     window.location.href = "http://plinth.lnmiit.ac.in/home.html";
                 }else {
