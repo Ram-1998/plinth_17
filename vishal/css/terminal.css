@@ -1,31 +1,4 @@
-@font-face {
- font-family: caviar;
- src: url("../font/CaviarDreams.ttf");
-}
-@font-face {
- font-family: rez;
- src: url("../font/REZ.ttf");
-}
-.navBar{
-	background-color: #FFFFFF;
-	height: 64px;
-	text-align: right;
-	font-family: 'Exo 2', sans-serif;
-	box-shadow: 0px 2px 4px 0 rgba(0,0,0,.5);
-}
-.links{
-	display: inline-block;
-	padding: 20px;
-}
-.links:hover{
-	border-bottom-color: #26A69A;
-	border-bottom-style: solid;
-	border-width: 5px;
-}
-.menulinks{
-	color: black;
-}
-.container{
+body{
 	background-color: #25313E;
 }
 .Plinth{
@@ -34,9 +7,27 @@
 	padding-top: 40px;
 	padding-bottom: 40px;		
 }
+img{
+	vertical-align: initial
+}
+.plinthText{
+	display: inline-block;
+	line-height: 0px;
+	position:relative;
+	top: 9px;
+}
 h1{
+	font-size:60px;	
 	display: inline-block;
 	font-family: rez;
+	padding-bottom:0px;
+}
+.smallText{
+	font-size: 10px;
+	position:relative;
+	bottom:27px;
+	left: 1px;
+	letter-spacing:0.8px;
 }
 .year{
 	font-size: 25px;
@@ -47,6 +38,7 @@ h1{
 }
 .menuBar {
   /*width: 800px;*/
+  position:relative;
   height: 35px;
   box-sizing: border-box;
   background-color: #E0E8F0;
@@ -58,6 +50,7 @@ h1{
 }
 .icons{
 	display: inline-block;
+	position: absolute;
 }
 .close{
 	width: 10px;
