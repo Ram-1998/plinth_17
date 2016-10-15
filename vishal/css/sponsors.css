@@ -43,3 +43,24 @@ footer{
 	border-top-style: solid;
 	border-top-width: 1px; 
 }
+
+.register{
+    position: absolute;
+}
+
+.social{
+    position:absolute;
+}
+.wrapper{
+    text-align: center;
+    border:2px solid rgba(0,0,0,0.2);
+    max-width:250px;
+    height:auto;
+    padding:15px;
+    margin-top:50px;
+    margin-bottom:50px;
+}
+
+.wrapper p{
+    padding-top:20px;
+}
