@@ -41,6 +41,7 @@ h1{
 	letter-spacing:0.8px;
 }
 .registration{
+	padding:30px;
 	padding-left: 50px;
 	padding-right: 50px;
 }
@@ -67,7 +68,7 @@ h1{
 	margin: 0px;
 }
 .count{
-	padding-top: 80px;
+	padding-top: 40px;
 	padding-bottom: 80px;
 }
 .countdown{
