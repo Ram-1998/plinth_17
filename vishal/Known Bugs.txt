@@ -8,3 +8,4 @@ In all 4:
 2) Register and like should minimize to side when scrolling down.
 
 Main content of sponspor page missing. :P
+
