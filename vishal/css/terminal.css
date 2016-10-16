@@ -92,3 +92,33 @@ h1{
   border-bottom-left-radius: 5px;
   border-bottom-right-radius: 5px;
 }
+.morse{
+	padding: 50px;
+}
+.circle{
+	border-style: solid;
+	width: 50px;
+	height: 50px;
+	border-radius: 50px;
+	display: inline-block;
+}
+.bluecircle{
+	border-color: #589FD6;
+	background-color: #589FD6;
+}
+.greencircle{
+	border-color: #26A69A;
+	background: #26A69A;
+}
+.redcircle{
+	border-color: #EE5451;
+	background: #EE5451;
+}
+.purplecircle{
+	border-color: #775BA7;
+	background: #775BA7;
+}
+.yellowcircle{
+	border-color: #FDED62;
+	background: #FDED62;
+}
