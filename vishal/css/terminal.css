@@ -5,7 +5,7 @@ body{
 	text-align: center;
 	color: white;
 	padding-top: 40px;
-	padding-bottom: 40px;		
+	padding-bottom: 40px;
 }
 img{
 	vertical-align: initial
@@ -17,7 +17,7 @@ img{
 	top: 9px;
 }
 h1{
-	font-size:60px;	
+	font-size:60px;
 	display: inline-block;
 	font-family: rez;
 	padding-bottom:0px;
@@ -57,7 +57,7 @@ h1{
   height: 10px;
 	background: #E96E4C;
 	border-radius: 100px;
-	margin-right: 3px;	
+	margin-right: 3px;
 	display: inline-block;
 }
 .minimize{
@@ -65,7 +65,7 @@ h1{
   height: 10px;
 	background: #E6A935;
 	border-radius: 100px;
-	margin-right: 3px;	
+	margin-right: 3px;
 	display: inline-block;
 }
 .maximize{
@@ -84,7 +84,6 @@ h1{
 	color: white;
 	/*width: 800px;*/
   height: 450px;
-  font-family: "caviar";
 	box-sizing: border-box;
 	background-color: #30353A;
   margin: 0 auto;
@@ -122,3 +121,7 @@ h1{
 	border-color: #FDED62;
 	background: #FDED62;
 }
+/*
+.terminal-output{
+	font-family: Roboto;
+}*/

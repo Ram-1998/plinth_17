@@ -38,6 +38,7 @@
     top: 0;
     width: 10px;
     height: 16px;
+    display: none;
     /* this seems to work after all on Android */
     /*left: -99999px;
     clip: rect(1px,1px,1px,1px);
@@ -72,8 +73,8 @@
     /*margin-top: 3px; */
 }
 .terminal .inverted, .cmd .inverted, .cmd .cursor.blink {
-    background-color: #aaa;
-    color: #000;
+    background-color: #fff;
+    color: #30353A;
 }
 .cmd .cursor.blink {
     -webkit-animation: terminal-blink 1s infinite steps(1, start);
@@ -83,44 +84,44 @@
 }
 @-webkit-keyframes terminal-blink {
   0%, 100% {
-      background-color: #000;
-      color: #aaa;
+      background-color: #30353A;
+      color: #fff;
   }
   50% {
       background-color: #bbb;
-      color: #000;
+      color: #30353A;
   }
 }
 
 @-ms-keyframes terminal-blink {
   0%, 100% {
-      background-color: #000;
-      color: #aaa;
+      background-color: #30353A;
+      color: #fff;
   }
   50% {
       background-color: #bbb;
-      color: #000;
+      color: #30353A;
   }
 }
 
 @-moz-keyframes terminal-blink {
   0%, 100% {
-      background-color: #000;
-      color: #aaa;
+      background-color: #30353A;
+      color: #fff;
   }
   50% {
       background-color: #bbb;
-      color: #000;
+      color: #30353A;
   }
 }
 @keyframes terminal-blink {
   0%, 100% {
-      background-color: #000;
-      color: #aaa;
+      background-color: #30353A;
+      color: #fff;
   }
   50% {
-      background-color: #bbb; /* not #aaa because it's seems there is Google Chrome bug */
-      color: #000;
+      background-color: #bbb; /* not #fff because it's seems there is Google Chrome bug */
+      color: #30353A;
   }
 }
 
@@ -133,13 +134,13 @@
     float: left;
 }
 .greeting{
-  
+
 }
 .terminal, .cmd {
     font-family: monospace;
     /*font-family: FreeMono, monospace; this don't work on Android */
-    color: #aaa;
-    background-color: #000;
+    color: #ffffff;
+    background-color: #30353A;
     font-size: 15px;
     line-height: 20px;
 }
@@ -191,7 +192,7 @@
     border-collapse: collapse;
 }
 .terminal td {
-    border: 1px solid #aaa;
+    border: 1px solid #fff;
 }
 .terminal h1::-moz-selection,
 .terminal h2::-moz-selection,
@@ -207,15 +208,15 @@
 .cmd div::-moz-selection,
 .cmd > span::-moz-selection,
 .cmd .prompt span::-moz-selection {
-    background-color: #aaa;
-    color: #000;
+    background-color: #fff;
+    color: #30353A;
 }
 /* this don't work in Chrome
 .terminal tr td::-moz-selection {
-    border-color: #000;
+    border-color: #30353A;
 }
 .terminal tr td::selection {
-    border-color: #000;
+    border-color: #30353A;
 }
 */
 .terminal h1::selection,
@@ -232,8 +233,8 @@
 .cmd div::selection,
 .cmd > span::selection,
 .cmd .prompt span::selection {
-    background-color: #aaa;
-    color: #000;
+    background-color: #fff;
+    color: #30353A;
 }
 .terminal .terminal-output div.error, .terminal .terminal-output div.error div {
     color: red;
@@ -263,7 +264,7 @@
 
 .paddingChild{
     padding:5px;
-    
+
 }
 
 .desc{

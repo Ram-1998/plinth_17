@@ -28,7 +28,7 @@ function main(){
     function help() {
         content.append("Help Documentation under construction\n");
     }
-  
+
     function echo(args) {
         var str = args.join(" ");
         content.append(str + "\n");

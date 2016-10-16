@@ -6,10 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Terminal | Plinth 2017 | The LNMIIT Jaipur</title>
     <link rel="stylesheet" href="css/foundation.min.css">
-    <link rel="stylesheet" href="css/terminal.css">
     <link rel="stylesheet" href="css/common.css">
     <link rel="stylesheet" href="css/jquery.terminal.css" >
-    <link href="https://fonts.googleapis.com/css?family=Exo+2" rel="stylesheet">
+    <link rel="stylesheet" href="css/terminal.css">
+    <link href="https://fonts.googleapis.com/css?family=Exo+2|Roboto" rel="stylesheet">
   </head>
   <body>
     <div class="navBar">
@@ -50,8 +50,7 @@
           </div>
           <span class="large-12 medium-10 small-9 columns title"></span>
         </div>
-        <div class="large-12 content">
-        root@plinth.lnmiit:
+        <div class="large-12 content ">
         </div>
       </div>
     </div>
@@ -81,7 +80,7 @@
 
     <script>
 jQuery(document).ready(function($) {
-    
+
     $('.content').terminal(function(command, term) {
        if (command == 'plinth'){
             term.echo('[[b;;;paddingParent]Commands: ]');
@@ -183,13 +182,13 @@ jQuery(document).ready(function($) {
                                 }
                             }, {
                                 prompt: 'First Name >',
-                                name: 'First Name'});    
+                                name: 'First Name'});
                         }
                     }, {
                         prompt: 'register >',
                         name: 'register'
                     });
-                    
+
                     /*term.echo('[[b;yellow;black;paddingChild]Last Name :]')
                     term.push(function(command, term) {
                         register(command);
@@ -201,7 +200,7 @@ jQuery(document).ready(function($) {
                 } else if(command == 'activate gui'){
                     window.location.href = "http://plinth.lnmiit.ac.in/home.html";
                 }else {
-                    term.echo('[[b;red;black]unknown command ]' + command);
+                    term.echo('[[b;red;#30353A]unknown command ]' + command);
                 }
             }, {
                 prompt: 'plinth > ',
@@ -211,10 +210,10 @@ jQuery(document).ready(function($) {
         } else if(command == 'activate gui'){
             window.location.href = "http://plinth.lnmiit.ac.in/home.html";
         }else {
-            term.echo('[[b;red;black]unknown command ]' + command);
+            term.echo('[[b;red;#30353A]unknown command ]' + command);
         }
     }, {
-        greetings: "  ____    _   _           _     _       _   _   _____ \n |  _ \\  | | (_)  _ __   | |_  | |__   ( ) / | |___  |\n | |_) | | | | | | '_ \\  | __| | '_ \\  |/  | |    / / \n |  __/  | | | | | | | | | |_  | | | |     | |   / /  \n |_|     |_| |_| |_| |_|  \\__| |_| |_|     |_|  /_/   \n                                                      \n Welcome to PLINTH'17, LNMIIT's Annual Techno-Management-Literary fest. \n Type plinth in the terminal to see list of available commands.\n Not a nerd, type activate gui !", 
+        greetings: "  ____    _   _           _     _       _   _   _____ \n |  _ \\  | | (_)  _ __   | |_  | |__   ( ) / | |___  |\n | |_) | | | | | | '_ \\  | __| | '_ \\  |/  | |    / / \n |  __/  | | | | | | | | | |_  | | | |     | |   / /  \n |_|     |_| |_| |_| |_|  \\__| |_| |_|     |_|  /_/   \n                                                      \n Welcome to PLINTH'17, LNMIIT's Annual Techno-Management-Literary fest. \n Type plinth in the terminal to see list of available commands.\n Not a nerd, type activate gui !",
         onBlur: function() {
             // prevent loosing focus
             return false;
